@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 1vh 8vw;
+  font-size: 20px;
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f97316;
+  padding: 5px 5px;
+  align-items: center;
+}
+
+nav .links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+nav .logo {
+  font-weight: bold;
+}
+
+nav .logo span {
+  border: 1px solid white;
+  padding: 0 2px;
+  margin-right: 4px;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  color: #000;
+  font-size: 0.7em;
+}
+
+nav ul li:not(:first-child):not(:last-child) {
+  margin: 0 2px;
+}
+
+nav ul li a {
+  color: #000;
+  font-size: 1em;
+  padding: 0 2px;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+nav .login-link {
+  font-size: 0.7em;
+}
+
+section {
+  color: rgb(53, 51, 51);
+  padding: 15px 0;
+  font-size: 0.8em;
+  min-height: 90vh;
+  background-color: rgb(246, 246, 239);
+}
+
+.story-card {
+  display: flex;
+  align-items: baseline;
+  padding: 5px 0;
+  line-height: 1.2;
+}
+
+.story-card:hover {
+  background-color: #f6f6ef;
+}
+
+.story-card .rank {
+  color: #828282;
+  min-width: 25px;
+  text-align: right;
+  margin-right: 5px;
+}
+
+.story-card .story-details {
+  flex: 1;
+}
+
+.story-card .title {
+  color: #000;
+}
+
+.story-card .title:visited {
+  color: #828282;
+}
+
+.story-card .meta {
+  font-size: 0.85em;
+  color: #828282;
+  margin-top: 3px;
+}
+
+.story-card .meta a {
+  color: #828282;
+}
+
+.story-card .meta a:hover {
+  text-decoration: underline;
+}
+
+.loader {
+  text-align: center;
+  padding: 20px;
+  color: #828282;
+}
+
+.error {
+  color: #ff6600;
+  text-align: center;
+  padding: 20px;
+}
+
+.pagination {
+  padding: 15px 0;
+  margin-left: 25px;
+  font-size: 0.85em;
+}
+
+.pagination a {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+.pagination a:hover {
+  text-decoration: underline;
+}
